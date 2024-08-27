@@ -31,6 +31,7 @@ public class BatchConfig {
                 .build();
     }
 
+
     @Bean
     public Step step(JobRepository jobRepository, DataSourceTransactionManager transactionManager,
                      ItemReader<Product> reader, ItemProcessor<Product, Product> itemProcessor,
